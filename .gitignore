@@ -1,2 +1,3 @@
 creds.conf
 *.xpkg
+gitops-agent.yaml
