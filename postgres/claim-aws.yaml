@@ -2,7 +2,7 @@ apiVersion: database.harness.org/v1alpha1
 kind: PostgreSQLInstance
 metadata:
   name: harness-crossplane-db
-  namespace: default
+  namespace: postgres
 spec:
   parameters:
     storageGB: 20
