@@ -115,7 +115,7 @@ spec:
             region: eu-west-2
             vpcIdSelector:
               matchControllerRef: true
-            groupName: crossplane-getting-started
+            groupName: crossplane-db-sg
             description: Allow access to PostgreSQL
             ingress:
               - fromPort: 5432
@@ -135,10 +135,10 @@ spec:
               matchControllerRef: true
             vpcSecurityGroupIDSelector:
               matchControllerRef: true
-            dbInstanceClass: db.t2.small
+            dbInstanceClass: db.t2.medium
             masterUsername: masteruser
             engine: postgres
-            engineVersion: "12"
+            engineVersion: "14"
             skipFinalSnapshotBeforeDeletion: true
             publiclyAccessible: true
           writeConnectionSecretToRef:
