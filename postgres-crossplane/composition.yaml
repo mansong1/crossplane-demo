@@ -135,10 +135,10 @@ spec:
               matchControllerRef: true
             vpcSecurityGroupIDSelector:
               matchControllerRef: true
-            dbInstanceClass: db.t2.medium
+            dbInstanceClass: db.t2.small
             masterUsername: masteruser
             engine: postgres
-            engineVersion: "14"
+            engineVersion: "12"
             skipFinalSnapshotBeforeDeletion: true
             publiclyAccessible: true
           writeConnectionSecretToRef:
