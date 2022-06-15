@@ -10,3 +10,9 @@ spec:
   forProvider:
     acl: private
     locationConstraint: eu-west-2
+    publicAccessBlockConfiguration:
+          blockPublicPolicy: true
+    accelerateConfiguration:
+          status: Enabled
+    versioningConfiguration:
+          status: Enabled
