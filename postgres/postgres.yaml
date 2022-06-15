@@ -3,6 +3,8 @@ kind: PostgreSQLInstance
 metadata:
   name: harness-crossplane-db
   namespace: postgres
+  annotations:
+    crossplane.io/external-name: harness-crossplane-db
 spec:
   parameters:
     storageGB: 20
