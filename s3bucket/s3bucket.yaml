@@ -1,7 +1,7 @@
-apiVersion: s3.aws.crossplane.io/v1beta1
+apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: s3bucket-mansong
+  name: s3bucket-mansong-crossplane
   namespace: s3bucket
 spec:
   providerConfigRef:
